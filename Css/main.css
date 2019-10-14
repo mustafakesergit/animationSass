@@ -1,0 +1,104 @@
+body {
+  background-color: lightblue;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background-color: #eee2e2;
+  width: 1600px;
+  height: 800px;
+  border: 1px solid blue;
+}
+
+.ball1, .ball2, .ball3 {
+  width: 200px;
+  height: 200px;
+  background-color: #d8b0d8;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.ball1 {
+  background-color: red;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.ball2 {
+  background-color: blue;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.ball3 {
+  background-color: green;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 900px;
+    top: 0px;
+  }
+  50% {
+    left: 900px;
+    top: 0px;
+  }
+  75% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 900px;
+    top: 0px;
+  }
+  50% {
+    left: 900px;
+    top: 0px;
+  }
+  75% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.ball {
+  position: relative;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  animation-name: example;
+  animation-duration: 3s;
+}
+/*# sourceMappingURL=main.css.map */
